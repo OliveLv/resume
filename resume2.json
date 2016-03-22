@@ -4,7 +4,7 @@
   "resume_title": "吕旭红 - 个人简历",
   "name": "吕旭红",
   "repo": "https://github.com/joyeecheung/resume.git",
-  "job_description": ["java工程师", "数据挖掘"],
+  "job_description": ["Java工程师", "数据挖掘工程师"],
   "contact": {
     "email": "adalxh@gmail.com",
     "wechat": {
@@ -34,25 +34,22 @@
   "education": [{
     "type": "undergraduate",
     "name": "福州大学",
-    "major": "计算机科学与应用",
+    "major": "计算机科学与技术",
     "start": "2010",
     "end": "2014",
     "honor": [
-      "2013.05 蓝桥杯福建赛区c/c++程序设计大赛一等奖",
-      "2013.04 福州大学三好学生",
-	  "2012.10 国家奖学金",
-	  "2012.04 全国大学生数学建模福建赛区本科组一等奖",
-	  "2012.04 校数学建模竞赛三等奖",
-	  "2012.04 蓝桥杯福建赛区c/c++程序设计大赛二等奖"
+      "2012 - 2013 学年度校**三等奖学金**",
+      "2013 - 2014 学年度校**一等奖学金**"
     ]
   },{
     "type": "postgraduate",
     "name": "中国科学院大学",
-    "major": "计算机科学与应用",
+    "major": "计算机科学与技术",
     "start": "2014",
     "end": "2017",
     "honor": [
-      "2015 - 2016 学年度校**三等奖学金**"
+      "2012 - 2013 学年度校**三等奖学金**",
+      "2013 - 2014 学年度校**一等奖学金**"
     ]
   }],
   "language": [{
@@ -72,20 +69,49 @@
       "能够在英文邮件列表、Stack Overflow 等社区正常交流"
     ]
   }],
-  "experience": [ {
-    "type": "project",
+  "experience": [{
+    "type": "internship",
     "techtype": "frontend",
-    "project_type": "personal",
-    "name": "博客",
-    "source": "https://webgis.elab.cnic.cn/sanjiangyuan/",
-    "demo": "https://webgis.elab.cnic.cn/sanjiangyuan/",
+    "place": "阿里巴巴 B2B-ICBU 数据应用部",
+    "start": "2015.07",
+    "end": "至今",
+    "name": "前端开发",
     "description": [
-      "利用nodejs搭建本地调试环境，使用**hexo**生成静态网页并提交到github上",
-      "利用github仓库实现多地同步发布博客"
+      "开发支持 i18n 的数据可视化组件",
+      "解决外部系统遗留的 bug 及浏览器兼容问题（`IE7+`）",
+      "使用 `SVG` 等技术开发内部系统数据可视化图表"
     ],
-    "stack": ["jade", "less", "gulp"],
-    "compatibility": "IE9+"
-  },{
+    "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
+    "compatibility": "IE8+"
+  }, {
+    "type": "internship",
+    "techtype": "frontend",
+    "place": "埃森哲广州 CDC",
+    "start": "2014.08",
+    "end": "2014.09",
+    "name": "前端开发",
+    "description": [
+      "参与某集团内部办公系统（OA）的前端开发，基于 `jQuery UI` 与 `Bootstrap` 实现前端组件及数据交互",
+      "解决遗留的 bug 及浏览器兼容问题（`IE8+`）",
+      "使用 `Grunt` 及 `Less` 完成皮肤开发"
+    ],
+    "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
+    "compatibility": "IE8+"
+  }, {
+    "type": "internship",
+    "techtype": "nodejs",
+    "place": "东西科技",
+    "start": "2014.03",
+    "end": "2014.06",
+    "name": "Node.js 开发",
+    "description": [
+      "开发并维护封装微信公众平台 API 的 `Express 中间件`",
+      "使用 `Mocha`、`Chai` 及 `CoffeeScript` 编写单元测试",
+      "结合 `MongoDB` 开发微信公众平台 Demo",
+      "编写 `bash` 脚本，使用 `ApacheBench` 对后端程序进行压力测试与资源使用分析，辅助服务器选型"
+    ],
+    "stack": ["nodejs", "express", "mocha", "chai", "coffeescript", "mongodb"]
+  }, {
     "type": "project",
     "techtype": "frontend",
     "project_type": "lab",
@@ -131,8 +157,36 @@
     "name": "基于SSI框架下的校园卡管理系统",
     "source": "https://github.com/joyeecheung/virtual-bookcase",
     "description": [
-	  "本科科研项目（SRTP）",
+	  "本科科研项目(SRTP)",
       "对消费数据进行分析，并利用jFreeChart生成图表"
+    ],
+    "stack": ["three.js", "mongodb", "express"],
+    "compatibility": "IE10+"
+  }, {
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "personal",
+    "name": "My Tech Diary",
+    "source": "https://github.com/joyeecheung/diary",
+    "demo": "http://joyeecheung.github.io/diary/",
+    "description": [
+      "一个技术日记站点生成器，从 `git submodule` 中读取 `Markdown` 文件，结合 `Jade` 模板，生成静态站点",
+      "通过 `PostCSS` 将依照实验性 CSS 标准编写的代码转译使用",
+      "前端 JavaScript 代码以 `CommonJS` 形式组织，使用 `WebPack` 进行打包处理",
+      "使用 `Gulp` 驱动页面生成、架设本地服务器、帮助部署到 GitHub Pages"
+    ],
+    "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
+    "compatibility": "IE9+"
+  }, {
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "personal",
+    "name": "Virtual Bookcase",
+    "source": "https://github.com/joyeecheung/virtual-bookcase",
+    "description": [
+      "基于 `Three.js` 实现的 3D 虚拟图书室",
+      "使用 `Express` 与 `MongoDB` 提供图书数据 API",
+      "使用 `RequireJS` 加载模块，`Grunt` 驱动工作流，`Web Worker` 优化图像处理"
     ],
     "stack": ["three.js", "mongodb", "express"],
     "compatibility": "IE10+"
@@ -145,6 +199,29 @@
         "能够编写语义化的 `HTML`，模块化的 `CSS`，实现较复杂的布局与动画",
         "熟悉已标准化的 `HTML5` / `CSS3` 新特性，实验项目中能尝试使用未广泛实现的新标准"
       ]
+    }, {
+      "summary": "`ECMAScript`（`JavaScript`）",
+      "description": [
+        "熟悉 `ECMAScript`（`JavaScript`），对 `JavaScript 引擎`及相关 JIT 技术有一定的了解",
+        "了解 `ECMAScript` 新标准与相关后处理工具并能在项目中使用"
+      ]
+    }, {
+      "summary": "`DOM` / `BOM` 及常见 `Web API`",
+      "description": [
+        "熟悉原生 `DOM` 与 `BOM` 的使用及相关标准（W3C / WHATWG），有桌面 / 移动端前端组件的开发经验",
+        "对 `WebGL` / `Web Workers` / `WebSocket` / `Web Components` / `SVG` 等 API 有一定的使用经验",
+        "阅读过 `WebKit` / `Blink` 源码中的部分实现，了解常见的 Web API **兼容性**问题及其解决方案"
+      ]
+    }, {
+      "summary": "前端工程实践",
+      "description": [
+        "使用 `Meteor` / `AngularJS` / `Polymer` 编写过简单的 CRUD SPA，了解 `Backbone.js` / `React` 及前端 `MV*` 模型",
+        "熟悉 `jQuery` / `jQuery UI` / `Bootstrap` 的使用、定制与扩展, 阅读过部分源代码",
+        "在项目中使用过 `Sea.js` / `RequireJS` / `Browserify` / `Bower` / `WebPack` 等多种模块化解决方案",
+        "在项目中使用过 `Less` / `Sass` / `PostCSS` / `CoffeeScript` / `TypeScript` 等预处理/后处理工具",
+        "日常使用 `Grunt` 或 `Gulp` 改进工作流",
+        "掌握基本的前端兼容性处理、性能优化知识与技巧，并能在项目中加以实践"
+      ]
     }]
   }, {
     "type": "backend",
@@ -154,13 +231,6 @@
         "能够使用 `Node.js API` / `Express` / `Koa` 搭建简单的后端程序与数据库交互、渲染模板及提供 `RESTful API`",
         "了解异步 I/O 及事件驱动的服务器模型，掌握常见的**异步编程**解决方案",
         "能编写简单的 `Express` / `Connect` / `Koa` 中间件，使用 `Mocha` 与 `Chai` 编写单元测试"
-      ]
-    }, {
-      "summary": "SSI",
-      "description": [
-        "使用 `Tornado` / `Flask`（`Python`） 搭建过简单的服务器",
-        "有使用 `MongoDB` / `MySQL` 数据库，`Redis` 缓存，`nginx` 反向代理的经验",
-        "了解 `HTTP`（1.x / 2）、 `TCP/IP`、 `WebSocket` 等协议"
       ]
     }, {
       "summary": "其他",
