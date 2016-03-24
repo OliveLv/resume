@@ -3,7 +3,7 @@
   "ga_id": "UA-63818301-2",
   "resume_title": "吕旭红 - 个人简历",
   "name": "吕旭红",
-  "repo": "https://github.com/joyeecheung/resume.git",
+  "repo": "https://github.com/olivelv/resume.git",
   "job_description": ["java工程师", "数据挖掘"],
   "contact": {
     "email": "adalxh@gmail.com",
@@ -13,18 +13,18 @@
     },
     "sinaweibo": {
       "id": "Olive_lv",
-      "url": "http://weibo.com/2930876843"
+      "url": "http://weibo.com/2957461967"
     },
     "github": {
-      "id": "olive_lv"
+      "id": "OliveLv"
     },
     "blog": {
-      "url": "http://joyeecheung.cnblogs.com"
+      "url": "http://blog.csdn.net/yylxid"
     }
   },
   "links": [{
     "type": "repo",
-    "url": "https://github.com/joyeecheung/resume"
+    "url": "https://github.com/olivelv/resume"
 
   }, {
     "type": "pdf",
@@ -52,7 +52,7 @@
     "start": "2014",
     "end": "2017",
     "honor": [
-      "2015 - 2016 学年度校**三等奖学金**"
+      "2015 - 2016 学年度校三等奖学金"
     ]
   }],
   "language": [{
@@ -67,9 +67,6 @@
       "score": "464"
     }],
     "description": [
-      "能流畅阅读英文专业书籍、文档及其他资料",
-      "可无字幕观看 MOOC 课程、开发者大会视频",
-      "能够在英文邮件列表、Stack Overflow 等社区正常交流"
     ]
   }],
   "experience": [ {
@@ -77,13 +74,13 @@
     "techtype": "frontend",
     "project_type": "personal",
     "name": "博客",
-    "source": "https://webgis.elab.cnic.cn/sanjiangyuan/",
-    "demo": "https://webgis.elab.cnic.cn/sanjiangyuan/",
+    "source": "https://github.com/OliveLv/OliveLv.github.io",
+    "demo": "https://github.com/OliveLv/OliveLv.github.io",
     "description": [
       "利用nodejs搭建本地调试环境，使用**hexo**生成静态网页并提交到github上",
       "利用github仓库实现多地同步发布博客"
     ],
-    "stack": ["jade", "less", "gulp"],
+    "stack": ["nodejs", "hexo", "markdown"],
     "compatibility": "IE9+"
   },{
     "type": "project",
@@ -96,7 +93,7 @@
       "该系统主要包括图层展示模块、定位统计分析等功能模块、特定数据展示模块以及气温降水预测模块",
       "利用**Dojo**展示青海湖气象站数据的详细信息"
     ],
-    "stack": ["jade", "less", "gulp"],
+    "stack": ["arcgis", "dojo"],
     "compatibility": "IE9+"
   }, {
     "type": "project",
@@ -110,7 +107,7 @@
       "负责系统搭建及基本功能的实现。使用**struts2**构建系统，实现搜索、查询自动补齐、结果预览、结果排序",
       "查找摘要生成相关论文，实现snippet自动生成"
     ],
-    "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
+    "stack": ["struts2", "jQuery"],
     "compatibility": "IE9+"
   }, {
     "type": "project",
@@ -122,7 +119,7 @@
       "修改Mahout源码，实现不同推荐方式，包括基于内容推荐、基于人口统计信息的推荐以及自适应混合推荐",
       "为了保证实时推荐，将推荐结果缓存，并利用quartz与spring整合实现定时任务调度，周期性更新推荐结果"
     ],
-    "stack": ["three.js", "mongodb", "express"],
+    "stack": ["Mahout", "struts2", "spring","iBatis","MySQL"],
     "compatibility": "IE10+"
   }, {
     "type": "project",
@@ -134,52 +131,38 @@
 	  "本科科研项目（SRTP）",
       "对消费数据进行分析，并利用jFreeChart生成图表"
     ],
-    "stack": ["three.js", "mongodb", "express"],
+    "stack": ["struts2", "spring", "iBatis","MySQL","jFreeChart"],
     "compatibility": "IE10+"
   }],
   "skills": [{
     "type": "frontend",
-    "item": [{
-      "summary": "`HTML` / `CSS`",
+    "item": [
+        {
+      "summary": "`HTML` / `CSS`，`JS`",
       "description": [
-        "能够编写语义化的 `HTML`，模块化的 `CSS`，实现较复杂的布局与动画",
-        "熟悉已标准化的 `HTML5` / `CSS3` 新特性，实验项目中能尝试使用未广泛实现的新标准"
+        "能够编写语义化的 `HTML`，模块化的 `CSS`，实现基本的布局与动画",
+        "能够使用`jQuery`，`Dojo`，`Arcgis`等Javascript库/框架"
       ]
     }]
   }, {
     "type": "backend",
-    "item": [{
-      "summary": "`Node.js`",
+    "item": [ {
+      "summary": "`SSI`",
       "description": [
-        "能够使用 `Node.js API` / `Express` / `Koa` 搭建简单的后端程序与数据库交互、渲染模板及提供 `RESTful API`",
-        "了解异步 I/O 及事件驱动的服务器模型，掌握常见的**异步编程**解决方案",
-        "能编写简单的 `Express` / `Connect` / `Koa` 中间件，使用 `Mocha` 与 `Chai` 编写单元测试"
+        "使用SSI搭建过简单的系统"
       ]
-    }, {
-      "summary": "SSI",
-      "description": [
-        "使用 `Tornado` / `Flask`（`Python`） 搭建过简单的服务器",
-        "有使用 `MongoDB` / `MySQL` 数据库，`Redis` 缓存，`nginx` 反向代理的经验",
-        "了解 `HTTP`（1.x / 2）、 `TCP/IP`、 `WebSocket` 等协议"
-      ]
-    }, {
-      "summary": "其他",
-      "description": [
-        "使用 `Tornado` / `Flask`（`Python`） 搭建过简单的服务器",
-        "有使用 `MongoDB` / `MySQL` 数据库，`Redis` 缓存，`nginx` 反向代理的经验",
-        "了解 `HTTP`（1.x / 2）、 `TCP/IP`、 `WebSocket` 等协议"
-      ]
-    }]
+    }
+    ]
   }, {
     "type": "miscellaneous",
     "item": [
-      "三年 `Linux` 使用经验，熟悉常用命令与配置，能编写简单的 `bash` 脚本",
-      "熟悉多种平台与编译环境下的 `C` / `C++` 及其新标准，编写过简单的解释器、数据库引擎、3D 图形程序及 Node.js 扩展，能阅读 `WebKit` / `Blink、V8` 等常接触项目的源代码并加以利用",
-      "熟悉 `Python`，能实现简单的数据及图像处理工具、自动化脚本、爬虫、机器学习算法及分布式程序（参见 GitHub）",
-      "具备基本的 `Web 安全`知识（`X.509` / `XSS` / `CSRF` 等）",
-      "能够使用 `LaTeX` 及 `Markdown` 编写得体的中英文文档或论文，具备良好的技术交流能力",
-      "日常使用 `Git` 与 `Sublime Text` / `Vim` 进行开发，也乐于尝试新工具",
-      "能够使用 `Photoshop` / `Illustrator` 完成简单的设计"
+	  "有使用`nodejs`,`MySQL` 数据库，`Memcached` 缓存的经验",
+	  "自学coursera、udacity上机器学习相关的课程，写过一些小程序，例如kernel k-means、apriori、GMMs",
+	  "熟悉‘c/c++’，能使用常用的STL库，解决oj上的题目",
+      "三年 `Linux` 使用经验，熟悉常用命令与配置",
+	  "熟悉‘R’，了解基本的语法，使用过图像处理及机器学习相关的库",
+      "能够使用`Markdown` 编写得体的中英文文档或论文，具备良好的技术交流能力",
+      "日常使用 `Git` 与 `eclipse` / `notepad++` 进行开发，也乐于尝试新工具"
     ]
   }]
 }
