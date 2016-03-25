@@ -112,7 +112,7 @@ gulp.task('watch', ['server'], function() {
 gulp.task('build', ['jade', 'less-debug', 'static']);
 gulp.task('build-for-deploy', ['jade', 'less', 'static']);
 gulp.task('printbuild', ['printjade', 'less-debug', 'static']);
-
+gulp.task('printbuild-for-deploy', ['printjade', 'less', 'static']);
 /****************** Server ****************/
 gulp.task('serve', function () {
   server.start();
@@ -126,7 +126,7 @@ gulp.task('deploy', ['build-for-deploy'], function() {
   return gulp.src('./dist/**/*')
     .pipe(plugins.ghPages());
 });
-gulp.task('printdeploy', ['print'], function() {
+gulp.task('printdeploy', ['printbuild-for-deploy'], function() {
   return gulp.src('./dist/**/*')
     .pipe(plugins.ghPages());
 });

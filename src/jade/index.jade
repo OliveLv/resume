@@ -10,16 +10,14 @@ block education
         dl.education-description.timeline-content
           dt.education-name= item.name
           dd.education-major= item.major +"("+education_type[item.type]+","+item.grade+")"
-          each honor in item.honor
-             dd.education-honor!= highlight(honor)
 
 block honor
   +section("honor", true)
     each item in honors
-      li.timeline-item(class="education-" + item.type)
+      li.timeline-item(class="honor-" + item.type)
         h3.timeline-title
-           time.education-time #{item.type}
-        dl.education-description.timeline-content
+           time.honor-time #{honor_type[item.type]}
+        dl.honor-description.timeline-content
           each honor in item.honor
             dd.honors-honor!= highlight(honor)
 

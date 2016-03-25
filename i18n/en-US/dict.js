@@ -8,7 +8,8 @@ module.exports = {
         "miscellaneous": "Miscellaneous"
     },
     education_type: {
-        "undergraduate": "(Bachelor's degree)"
+        "undergraduate": "Bachelor's degree",
+		"postgraduate": "Master's degree"
     },
     link_type: {
         "zhihu": "Zhihu",
@@ -21,6 +22,10 @@ module.exports = {
             "ch": "Education",
             "en": "Education"
         },
+		"honor":{
+			"ch":"Honor",
+			"en":"Honor"
+		},
         "language": {
             "ch": "Language",
             "en": "Language"
@@ -34,5 +39,15 @@ module.exports = {
             "en": "Skills"
         }
     },
-    lt_ie8_comment: "You are using IE8 or lower version of IE, which is not supported."
+    lt_ie8_comment: "You are using IE8 or lower version of IE, which is not supported.",
+	dict: {
+        source_code: "Source code",
+        demo: "Demo",
+		show:"Link"
+    },
+    project_type: {
+        "personal": "Personal",
+		"lab":"Lab",
+		"other":"Other"
+    }
 };
