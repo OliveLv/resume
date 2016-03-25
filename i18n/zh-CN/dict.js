@@ -8,8 +8,8 @@ module.exports = {
         "miscellaneous": "其他"
     },
     education_type: {
-        "undergraduate": "（本科）",
-		"postgraduate":"(硕士)"
+        "undergraduate": "本科",
+		"postgraduate":"硕士"
     },
     link_type: {
         "zhihu": "知乎",
@@ -22,6 +22,10 @@ module.exports = {
             "ch": "教育经历",
             "en": "Education"
         },
+		"honor":{
+			"ch":"获奖情况",
+			"en":"Honor"
+		},
         "language": {
             "ch": "语言水平",
             "en": "Language"

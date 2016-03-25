@@ -37,6 +37,30 @@ gulp.task('jade', function() {
     .pipe(plugins.jade({ locals: getLocals() }))
     .pipe(gulp.dest('./dist/'));
 });
+function getPrintLocals() {
+  var resumeData = require('./print.json');
+  var localePath = './i18n/' + resumeData.data_lang + '/dict.js';
+  var locals = require(localePath);
+
+  // remove cache
+  delete require.cache[require.resolve('./print.json')];
+  delete require.cache[require.resolve(localePath)];
+
+  // integrate the context
+  for (var item in resumeData) {
+    locals[item] = resumeData[item];
+  }
+
+  locals.highlight = highlight;
+
+  return locals;
+}
+
+gulp.task('printjade', function() {
+  return gulp.src('./src/jade/index.jade')
+    .pipe(plugins.jade({ locals: getPrintLocals() }))
+    .pipe(gulp.dest('./dist/'));
+});
 
 /************* less to css  ********************/
 var lessPath = [path.join(__dirname, 'src', 'less', 'includes'),
@@ -87,6 +111,7 @@ gulp.task('watch', ['server'], function() {
 /****************** Build ****************/
 gulp.task('build', ['jade', 'less-debug', 'static']);
 gulp.task('build-for-deploy', ['jade', 'less', 'static']);
+gulp.task('printbuild', ['printjade', 'less-debug', 'static']);
 
 /****************** Server ****************/
 gulp.task('serve', function () {
@@ -95,9 +120,13 @@ gulp.task('serve', function () {
 
 gulp.task('server', ['build', 'serve']);
 gulp.task('preview', ['build-for-deploy', 'serve']);
-
+gulp.task('print', ['printbuild', 'serve']);
 /****************** Deploy ****************/
 gulp.task('deploy', ['build-for-deploy'], function() {
+  return gulp.src('./dist/**/*')
+    .pipe(plugins.ghPages());
+});
+gulp.task('printdeploy', ['print'], function() {
   return gulp.src('./dist/**/*')
     .pipe(plugins.ghPages());
 });

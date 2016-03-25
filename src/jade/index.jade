@@ -9,9 +9,19 @@ block education
           time.education-time #{item.start} ~ #{item.end}
         dl.education-description.timeline-content
           dt.education-name= item.name
-          dd.education-major= item.major + education_type[item.type]
+          dd.education-major= item.major +"("+education_type[item.type]+","+item.grade+")"
           each honor in item.honor
-            dd.education-honor!= highlight(honor)
+             dd.education-honor!= highlight(honor)
+
+block honor
+  +section("honor", true)
+    each item in honors
+      li.timeline-item(class="education-" + item.type)
+        h3.timeline-title
+           time.education-time #{item.type}
+        dl.education-description.timeline-content
+          each honor in item.honor
+            dd.honors-honor!= highlight(honor)
 
 
 block language
@@ -49,5 +59,4 @@ block links
 
 block repo
   p
-    | This resume is generated with Gulp, Less and Jade by 
-    | #[a(href="https://github.com/joyeecheung/resume") Joyee Cheung&#39;s resume generator].
+    | This resume is generated with Gulp, Less and Jade.

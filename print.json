@@ -28,7 +28,7 @@
 
   }, {
     "type": "pdf",
-    "url": "static/joyeecheung.pdf"
+    "url": "static/olivelv.pdf"
 
   }],
   "education": [{
@@ -37,6 +37,7 @@
     "major": "计算机科学与应用",
     "start": "2010",
     "end": "2014",
+	"grade":"前5%",
     "honor": [
     ]
   },{
@@ -45,10 +46,34 @@
     "major": "计算机科学与应用",
     "start": "2014",
     "end": "2017",
+	"grade":"前20%",
     "honor": [
-      "2015 - 2016 学年度校三等奖学金"
+      
     ]
   }],
+  "honors": [{
+	"type":"比赛",
+	"honor":[
+	  "2013.05 蓝桥杯福建赛区c/c++程序设计大赛一等奖",
+	  "2012.04 全国大学生数学建模福建赛区本科组一等奖",
+	  "2012.04 校数学建模竞赛三等奖",
+	  "2012.04 蓝桥杯福建赛区c/c++程序设计大赛二等奖"
+	]
+  },{
+	"type":"荣誉",
+	"honor":[
+	  "2013.04 福州大学三好学生"
+	]
+  },{
+	"type":"奖学金",
+	"honor":[
+	  "2012.10 国家奖学金",
+	  "大学期间，五次一等奖学金，一次二等奖学金",
+	  "2015 - 2016 学年度校三等奖学金"
+	]
+  }
+      
+    ],
   "language": [{
     "type": "english",
     "certificate": [{
@@ -64,19 +89,6 @@
     ]
   }],
   "experience": [ {
-    "type": "project",
-    "techtype": "frontend",
-    "project_type": "personal",
-    "name": "博客",
-    "source": "https://github.com/OliveLv/OliveLv.github.io",
-    "demo": "OliveLv.github.io",
-    "description": [
-      "利用nodejs搭建本地调试环境，使用**hexo**生成静态网页并提交到github上",
-      "利用github仓库实现多地同步发布博客"
-    ],
-    "stack": ["nodejs", "hexo", "markdown"],
-    "compatibility": "IE9+"
-  },{
     "type": "project",
     "techtype": "frontend",
     "project_type": "lab",
